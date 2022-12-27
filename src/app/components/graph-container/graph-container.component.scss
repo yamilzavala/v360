@@ -46,6 +46,7 @@ body {
     width: 100%;
     justify-content: center;
     align-content: center;
+    
 }
 
 .grid-wrapper-row-3 {
@@ -196,4 +197,58 @@ body {
 .border-left-dashed {
     border-left: dashed 2px #ccc; 
     padding-left: 5px;
+}
+
+svg.arrow {
+	transform-origin: left top;
+	transform: rotate(-12deg);
+
+	path {
+		stroke-width: 2;
+		stroke-dasharray: 1, 100;
+		stroke-linecap: round;
+		fill: transparent;
+		stroke: gray;
+	}
+
+	polygon {
+		fill: gray;
+		stroke: none;
+	}
+}
+
+.svg-arrow-main-to-right {
+    position: absolute; 
+    top: 380px; 
+    left: 590px;
+}
+
+.svg-arrow-top-to-main {
+    position: absolute; 
+    top: 370px; 
+    left: 700px;
+}
+
+@media (max-width: 1670px) {
+    .svg-arrow-main-to-right {
+        position: absolute; 
+        top: 380px; 
+        left: 400px;
+    }
+
+    .svg-arrow-top-to-main {        
+        left: 600px;
+    }
+}
+
+@media (max-width: 1503px) {
+    .svg-arrow-main-to-right {
+        position: absolute; 
+        top: 380px; 
+        left: 380px;
+    }
+
+    .svg-arrow-top-to-main {         
+        left: 500px;
+    }
 }
