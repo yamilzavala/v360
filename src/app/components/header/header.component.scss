@@ -1,0 +1,46 @@
+body {
+    margin: auto 0;
+    font-family: arial "Open Sans";
+}
+
+/* NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 99.1%;
+}
+
+.zone {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  border-bottom: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+}
+
+li {
+  padding: 14px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        padding: 0;
+        font-size: 0.5em;
+    }
+}
